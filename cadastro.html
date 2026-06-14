@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/pico.blue.css">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+        .centralizar {
+            border: solid 2px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="centralizar">
+        <div style="display: flex; justify-content: center;"><img src="image/avatar.jpg" alt=""
+                style="width: 20%; border-radius: 25px;"></div>
+        <form action="feed.html">
+            <label for="nome">nome</label>
+            <input type="text" required>
+            <label for="email">email</label>
+            <input type="email" required>
+            <label for="username">username</label>
+            <input type="text" required>
+            <label for="password">password</label>
+            <input type="password" required>
+            <label for="password">confirmar password</label>
+            <input type="password" required>
+            <label for="genero">genero</label>
+            <select name="favorite-cuisine" aria-label="Select your favorite cuisine..." required>
+                <option selected disabled value="">
+                    Selecione seu genero
+                </option>
+                <option>masculino</option>
+                <option>feminino</option>
+                <option>outro</option>
+            </select>
+            <label for="data">data de nascimento</label>
+            <input type="date" required>
+            <button type="submit">registrar-se</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
